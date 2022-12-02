@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://myiplserver.database.windows.net:1433;database=ipldb;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: yashraj.bhawsar
+    password: Ipl@1234
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect : org.hibernate.dialect.SQLServer2012Dialect
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+server:
+  port: 9191
+
+
